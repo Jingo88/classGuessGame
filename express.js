@@ -9,10 +9,10 @@ app.use(express.static('public'));
 app.get('/', function(req, res){
 	var celeb = { "results": {
 	  	"profession": "star",
-	  	"known_for": ["A lot of movies", "talking to an empty chair"],
+	  	"known_for": ["Being an actor, director, and producer", "talking to an empty chair", 'being an enforcer'],
 	  	"gender": "male",
 	  	"first letter of first name": "C",
-	  	"extra hint": "Has a very attractive son!"
+	  	"extra hint": "Has a very attractive son!. He's also a republican"
 	}
 	}
 
@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 })
 
 app.get('/Clint_Eastwood', function(req,res){
-	var correct = {correct: "LUCK GUESS PUNK"};
+	var correct = {correct: "LUCKY GUESS PUNK"};
 
 	res.json(correct);
 })
